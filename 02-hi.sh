@@ -1,5 +1,4 @@
 #!/bin/bash
-a=$2
-b=$1
-echo "${a}::hi ${b} wats going on"
-echo "${b}::ntg {a}"
+
+fruits=("apple" "banana" "grapes")
+echo "${fruits[0]}"
