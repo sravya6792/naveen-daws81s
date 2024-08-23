@@ -1,3 +1,5 @@
 #!/bin/bash
-echo "naveen::hi pavan wats going on"
-echo "pavan::ntg naveen"
+a=naveen
+b=pavan
+echo "${a}::hi ${b} wats going on"
+echo "${b}::ntg {a}"
