@@ -1,8 +1,8 @@
 number=$1
-
-if [ $number -gt 20 ]
+dnf install git -y
+if [ $?!=0 ]
 then
-   echo "hi"
+   echo "install git"
 else
-   echo "hello"
+   echo "git already installed"
 fi
