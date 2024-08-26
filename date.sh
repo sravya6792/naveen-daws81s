@@ -1,10 +1,13 @@
 userid=$(id -u)
 validate(){
-   if[ $1 -ne 0 ]
+   if [ $1 -ne 0 ]
    then
       echo "$2 is failed"
    else
       echo "$1 is success"  
+
+
+   fi
 }
 if [ $userid -ne 0 ]
 then
