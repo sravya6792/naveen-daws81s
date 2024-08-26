@@ -1,8 +1,7 @@
-number=$1
-dnf install git -y
-if [ $? -ne 0 ]
+userid=$(id -u)
+if[ $ userid -ne 0 ]
 then
-   echo "hi naveen"
-else
-   echo "bye naveen"
+    echo "please run this script with root"
+
+
 fi
