@@ -5,7 +5,7 @@ then
    exit 1
 
 fi
-dnf list installed gittt
+dnf list installed gitt
 if [ $? -ne 0 ]
 then
    echo "plz install git"
@@ -15,7 +15,8 @@ then
       echo "git is not installed"
 
    else
-      echo "git is installed"   
+      echo "git is installed" 
+   fi     
 else
    echo "already installed"
 fi
