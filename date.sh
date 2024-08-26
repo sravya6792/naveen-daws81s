@@ -7,3 +7,10 @@ then
    exit 1
 
 fi
+dnf list installed git
+if[ $? -ne 0 ]
+then
+    echo "git is not installed"
+
+ else
+    echo"git is installed"   
