@@ -1,4 +1,4 @@
-userid=(id -u)
+userid=$(id -u)
 
 if [ $userid -ne 0 ]
 then
@@ -7,4 +7,3 @@ then
    exit 1
 
 fi
-dnf install git -y
