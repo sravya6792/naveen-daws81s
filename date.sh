@@ -9,8 +9,7 @@ then
 fi
 dnf list installed git
    if [ $? -ne 0 ]
-then
-    echo "git not"
-else
-   echo git yes"
-fi
+   then
+       echo "git not"
+   else
+      echo "git"
