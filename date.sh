@@ -1,2 +1,2 @@
-date
-echo "hi"
+var=$(date)
+echo "$var"
