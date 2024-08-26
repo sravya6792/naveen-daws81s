@@ -2,7 +2,7 @@ number=$1
 dnf install git -y
 if [ $?!=0 ]
 then
-   echo "install git"
+   echo "hi naveen"
 else
-   echo "git already installed"
+   echo "bye naveen"
 fi
