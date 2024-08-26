@@ -1,9 +1,8 @@
-userid=$(id -u)
+userid=(id -u)
+
 if [ $userid -ne 0 ]
 then
-   echo"please run the script with root"
-   exit 1
-
+   echo "plz give root acces"
 
 fi
 dnf install git -y
