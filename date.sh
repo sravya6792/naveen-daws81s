@@ -1,2 +1,1 @@
-var=$(date)
-echo "$var"
+$@
