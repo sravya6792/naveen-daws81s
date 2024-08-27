@@ -29,6 +29,23 @@ then
    echo "plz choose root access"|tee -a $LOG_FILE
    exit 1
 else
-   echo "git installed"&>>LOG_FILE
+   echo "$package installed"&>>LOG_FILE
 fi
-
+for package in $@
+do
+  dnf list installed $package&>>$LOG_FILE
+       
+       
+if [ $? -ne 0 ]
+then
+   echo "$package is not installed plz install"&>>$LOG_FILE
+   dnf install $package&>>LOG_FILE
+   
+   
+   
+    
+   validate $? "$package is"
+   
+else
+   echo "$package is already installed"&>>$LOG_FILE
+fi
