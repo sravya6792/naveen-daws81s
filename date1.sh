@@ -10,9 +10,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo "$2....$R is not installed $N"
+        echo  -e "$2....$R is not installed $N"
     else
-        echo "$2...$G is installed  $N"
+        echo  -e "$2...$G is installed  $N"
 
     fi        
 }
