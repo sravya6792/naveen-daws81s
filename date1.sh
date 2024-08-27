@@ -26,13 +26,13 @@ then
 else
    echo "git installed"
 fi
-       dnf list installed git
+       dnf list installed gitttt
        
        
 if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"
-   dnf install git -y
+   dnf install gittt -y
    validate $? "git is"
    
 else
