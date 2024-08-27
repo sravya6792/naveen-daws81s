@@ -6,7 +6,7 @@ N="\e[33m"
 
 LOGS_FOLDER="/var/log/shell_script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-TIMESTAMP=$(date + %y-%m-%d-%H-%M-%S)
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.LOG"
 
 validate()
@@ -51,6 +51,11 @@ fi
 if [ $? -ne 0 ]
 then
    echo "mysql is not installed plz install"&>>LOG_FILE
+
+
+
+
+
    dnf install mysql -y
    validate $? "mysql is"
    
