@@ -4,9 +4,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo "git is not installed"
+        echo "naveen is not installed"
     else
-        echo "git is installed"
+        echo "naven is installed"
 
     fi        
 }
