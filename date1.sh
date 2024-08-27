@@ -2,7 +2,7 @@
 userdata=$(id -u)
 validate()
 {
-    if[ $? -ne 0]
+    if [ $? -ne 0 ]
     then
         echo "git is not installed"
     else
