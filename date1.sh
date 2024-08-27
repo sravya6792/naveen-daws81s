@@ -22,6 +22,7 @@ then
       echo "git is not installed"
    else 
       echo "git is installed boss"
+    fi  
 else
    echo "git is already installed"
 fi
