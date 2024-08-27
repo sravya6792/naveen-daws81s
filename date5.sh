@@ -17,9 +17,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo  -e "$2....$R is not installed $N"&>>LOG_FILE
+        echo  -e "$2....$R is not installed $N"&>>$LOG_FILE
     else
-        echo  -e "$2...$G is installed  $N"&>>LOG_FILE
+        echo  -e "$2...$G is installed  $N"&>>$LOG_FILE
 
     fi        
 }
@@ -28,17 +28,17 @@ validate()
 echo "$userdata"
 if [ $userdata -ne 0 ]
 then
-   echo "plz choose root access"&>>LOG_FILE
+   echo "plz choose root access"&>>$LOG_FILE
    exit 1
 else
    echo "git installed"&>>LOG_FILE
 fi
-       dnf list installed gitttt&>>LOG_FILE
+       dnf list installed gitttt&>>$LOG_FILE
        
        
 if [ $? -ne 0 ]
 then
-   echo "git is not installed plz install"&>>LOG_FILE
+   echo "git is not installed plz install"&>>$LOG_FILE
    dnf install gittt&>>LOG_FILE
    
    
@@ -47,19 +47,19 @@ then
    validate $? "git is"
    
 else
-   echo "git is already installed"&>>LOG_FILE
+   echo "git is already installed"&>>$LOG_FILE
 fi
  dnf list avaialable mysql &>>LOG_FILE
        
        
 if [ $? -ne 0 ]
 then
-   echo "mysql is not installed plz install"&>>LOG_FILE
+   echo "mysql is not installed plz install"&>>$LOG_FILE
    dnf install mysql -y&>>LOG_FILE
    validate $? "mysql is"
    
 else
-   echo "mysql is already installed"&>>LOG_FILE
+   echo "mysql is already installed"&>>$LOG_FILE
 fi
 
 
