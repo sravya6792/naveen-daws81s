@@ -1,6 +1,15 @@
 #!/bin/bash
 userdata=$(id -u)
+validate()
+{
+    if [ $? -ne 0 ]
+    then
+        echo "git is not installed"
+    else
+        echo "git is installed"
 
+    fi        
+}
 
 
 echo "$userdata"
