@@ -49,3 +49,4 @@ then
 else
    echo "$package is already installed"&>>$LOG_FILE
 fi
+done
