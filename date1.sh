@@ -21,7 +21,7 @@ validate()
     fi        
 }
 
-
+echo "hi"&>>LOG_FILE
 echo "$userdata"
 if [ $userdata -ne 0 ]
 then
