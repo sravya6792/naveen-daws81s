@@ -1,12 +1,18 @@
 #!/bin/bash
 userdata=$(id -u)
+R="\e[31m "
+G="\e[32m "
+N="\e[33m "
+
+
+
 validate()
 {
     if [ $? -ne 0 ]
     then
-        echo "$2 is not installed"
+        echo "$2....$R is not installed $N"
     else
-        echo "$2 is installed"
+        echo "$2...$G is installed  $N"
 
     fi        
 }
