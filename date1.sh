@@ -1,5 +1,15 @@
 #!/bin/bash
 userdata=$(id -u)
+validate()
+{
+    if[ $? -ne 0]
+    then
+        echo "git is not installed"
+    else
+        echo "git in"
+
+    fi       
+}
 
 echo "$userdata"
 if [ $userdata -ne 0 ]
@@ -10,7 +20,7 @@ else
    echo "git installed"
 fi
        dnf install git -y
-       
+       validate $?
 if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"
