@@ -20,7 +20,7 @@ then
 else
    echo "git installed"
 fi
-       dnf install gittttt -y
+       dnf install git -y
        
        
 if [ $? -ne 0 ]
@@ -32,3 +32,7 @@ then
 else
    echo "git is already installed"
 fi
+
+
+
+
