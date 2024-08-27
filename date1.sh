@@ -30,20 +30,20 @@ then
 else
    echo "git installed"&>>LOG_FILE
 fi
-       dnf list installed git
+       dnf list installed git&>>LOG_FILE
        
        
 if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"&>>LOG_FILE
-   dnf install git -y
+   dnf install git -y&>>LOG_FILE
 
    validate $? "git is"
    
 else
    echo "git is already installed"&>>LOG_FILE
 fi
- dnf list avaialable mysql 
+ dnf list avaialable mysql &>>LOG_FILE
        
        
 if [ $? -ne 0 ]
@@ -54,7 +54,7 @@ then
 
 
 
-   dnf install mysql -y
+   dnf install mysql -y&>>LOG_FILE
    validate $? "mysql is"
    
 else
