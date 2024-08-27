@@ -4,9 +4,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo "naveen is not installed"
+        echo "$2 is not installed"
     else
-        echo "naven is installed"
+        echo "$2 is installed"
 
     fi        
 }
@@ -27,12 +27,8 @@ if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"
    dnf install git -y
-   if [ $? -ne 0 ]
-   then
-      echo "git is not installed"
-   else 
-      echo "git is installed boss"
-    fi  
+   validate $? "git is"
+   
 else
    echo "git is already installed"
 fi
