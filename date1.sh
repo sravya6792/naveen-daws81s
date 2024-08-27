@@ -1,5 +1,5 @@
 #!/bin/bash
-userdata=(id -u)
+userdata=$(id -u)
 
 echo "$userdata"
 
