@@ -1,6 +1,7 @@
 #!/bin/bash
 userdata=$(id -u)
 R="\e[31m"
+
 G="\e[32m"
 N="\e[33m"
 LOGS_FOLDER="/var/log/shell-script"
