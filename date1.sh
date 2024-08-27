@@ -21,7 +21,7 @@ else
    echo "git installed"
 fi
        dnf install git -y
-       validate $?
+       
        
 if [ $? -ne 0 ]
 then
