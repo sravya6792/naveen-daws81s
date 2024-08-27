@@ -17,9 +17,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo  -e "$2....$R is not installed $N"&>>$LOG_FILE
+        echo  -e "$2....$R is not installed $N"| tee -a $LOG_FILE
     else
-        echo  -e "$2...$G is installed  $N"&>>$LOG_FILE
+        echo  -e "$2...$G is installed  $N"| tee -a $LOG_FILE
 
     fi        
 }
@@ -28,7 +28,7 @@ validate()
 echo "$userdata"
 if [ $userdata -ne 0 ]
 then
-   echo "plz choose root access"&>>$LOG_FILE
+   echo "plz choose root access"|tee -a $LOG_FILE
    exit 1
 else
    echo "git installed"&>>LOG_FILE
