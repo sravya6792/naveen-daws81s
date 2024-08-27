@@ -10,7 +10,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
 mkdir -p $LOGS_FOLDER
 
 
-
+echo "hi"
 
 
 validate()
