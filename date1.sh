@@ -1,8 +1,8 @@
 #!/bin/bash
 userdata=$(id -u)
-R="\e[31m "
-G="\e[32m "
-N="\e[33m "
+R="\e[31m"
+G="\e[32m"
+N="\e[33m"
 
 
 
@@ -32,7 +32,11 @@ fi
 if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"
-   dnf install gittt -y
+   dnf install gittt
+   
+   
+   
+    -y
    validate $? "git is"
    
 else
