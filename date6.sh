@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 userdata=$(id -u)
 R="\e[31m"
 G="\e[32m"
