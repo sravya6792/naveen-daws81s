@@ -20,7 +20,7 @@ then
 else
    echo "git installed"
 fi
-       dnf install git -y
+       dnf install gittttt -y
        
        
 if [ $? -ne 0 ]
