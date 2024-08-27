@@ -29,17 +29,14 @@ then
 else
    echo "git installed"&>>LOG_FILE
 fi
-       dnf list installed gitttt
+       dnf list installed git
        
        
 if [ $? -ne 0 ]
 then
    echo "git is not installed plz install"&>>LOG_FILE
-   dnf install gittt
-   
-   
-   
-    -y
+   dnf install git -y
+
    validate $? "git is"
    
 else
