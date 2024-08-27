@@ -43,7 +43,7 @@ then
    
    
    
-    -y
+    
    validate $? "git is"
    
 else
