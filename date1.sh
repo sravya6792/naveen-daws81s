@@ -1,10 +1,7 @@
 #!/bin/bash
 userdata=$(id -u)
-validate()
-{
-    
-         
-}
+
+
 
 echo "$userdata"
 if [ $userdata -ne 0 ]
