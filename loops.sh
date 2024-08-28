@@ -28,8 +28,12 @@ do
   if [ $? -ne 0 ]
   then
       echo "$package is not installed"
-      dnf install $package -y
-   fi   
+      dnf install $package -y 
+      validate $? "$package is"
+
+   fi
+  else
+
+     echo "$package is already"    
 done  
 
-echo "hi"
