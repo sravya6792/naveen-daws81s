@@ -31,3 +31,5 @@ do
       dnf install $package -y
    fi   
 done  
+
+echo "hi"
