@@ -9,7 +9,9 @@ validate()
      echo "$2 is failed"
 
  else
-    echo "$2 is success"  
+    echo "$2 is success"
+
+ fi     
 
 
 
