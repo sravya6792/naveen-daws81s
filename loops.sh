@@ -31,9 +31,11 @@ do
       dnf install $package -y 
       validate $? "$package is"
 
-   fi
-  else
+   
+   
+    else
 
-     echo "$package is already"    
+     echo "$package is already" 
+    fi    
 done  
 
