@@ -39,7 +39,7 @@ validate $? "installing mysql server is enabled or not"
 systemctl start mysqld
 validate $? "installing mysql server is started or not"
 mysql_secure_installation --set-root-pass ExpenseApp@1
-validate $? "installing mysql server is spassword setup "
+validate $? "setting up root password "
 
 
 
