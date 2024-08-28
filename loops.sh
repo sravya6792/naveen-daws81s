@@ -24,6 +24,10 @@ fi
 
 for package in $@
 do
-  dn install $package -y
-  validate $? "$package"
+  dnf list installed $package 
+  if[ $? -ne 0 ]
+  then
+      echo "$package is not installed"
+      dnf install $package -y
+   fi   
 done  
